@@ -1,97 +1,147 @@
 html, body{
-		font-family: 'Bitter', Arial, 'Georgia', Times, Times New Roman, serif !important;
-		margin-bottom: 0;
-		overflow-x: hidden;
-		height: 100%;
+	font-family: GillSans, Calibri, Trebuchet, sans-serif;
+	min-height: 100%;
+	margin-bottom: 0;
+    background: fixed no-repeat url(../images/back1.jpg);
+    background-size: cover;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
-h2{
-	font-size: 35px;
-}h3{
+.container{
+	width: 80%;
+}
+.row{
+	margin: 0px;
+}
+/*---------------Header-------------------------*/
+/*Seting the navbar opacity*/
+.opacity{
+	opacity: .1;
+}
+/*my Logo */
+.logo{
+	position: fixed;
+	width: inherit;
+	height: inherit;
+	color: #039be5;
+	padding: 10px;
+	font-size: 300%;
+	text-shadow: 1px 2px 9px #616161;
+	font-weight: bolder;
+	letter-spacing: -5px;
+}
+.small-logo{
+	font-size: 30px;
+}
+/*Menu options top right corner*/
+.menu-bar{
+	position: fixed;
+	float: right;
 	font-size: 25px;
-}
-p{
-	font-size: 20px;
-	line-height: 27px;
-}
-#tarciso{
-	border: 1px solid #ebebeb;
-}
-.wrapper{
-    min-height: 100%;
-    margin: 0 auto -50px;
+	letter-spacing: normal;
+	text-shadow: none;
+	display: inline-flex;
 }
 
-.navbar{
-	border-radius: 0;
-	padding-top: 10px;
-}
-
-.navbar-brand{
-	font-size: 36px;
-}
-
-ul{
-	font-size: 20px;
-}
-
-.panel{
-	padding: 0 20px 20px 20px;
-}
-
-.page-header{
-	border-bottom: 3px solid #777 !important;
-	padding-right: 0;
-	padding-left: 0;
-}
-
-.bounce{
-	text-decoration: none;
-	color: rgb(255,255,255);
-	border: 3px solid;
-}
-
-.bounce:hover{
-	border: .5px;
-}
-
-#relative{
-	position: relative;
-}
-
-#absolute{
-	color:  #169e9e;
-	margin-bottom: 20px;
-}
-
-.portfolioImage{
-	width: 100%;
-	min-height: 260px;
-}
-
-.navbar-inverse{
-	border-top: 2px solid rgb(220,20,60) !important;
-}
-
-.footer, 
-.push{
-
-	color: 	rgb(169,169,169) !important;
-	padding-top: 30px !important;
+.about-me, .my-portfolio, .contact-me{
+	float: right;
+	margin-right: 5px;
+	margin-left: 5px;
+	padding: 10px;
+	padding-top: 20px;
 	height: 50px;
 }
-
-
-@media only screen and ( max-width: 768px){
-	.navbar-brand{
-		text-align: center;
-	}
-	h3{
-		text-align: left !important;
-	}
+a{
+	height: 50px;
+}
+a:hover{
+	color: #0091ea;
 }
 
-@media only screen and ( max-width: 400px){
-	h3 .header3{
-		text-align: left;
-	}
+/*------------------------------------------------*/
+/*--------------Main Content----------------------*/
+main{
+	flex: 1 0 auto;
 }
+.center-image{
+	margin-top: 10%;
+	margin-left: 500px;
+}
+.my-image{
+	position: fixed;
+	width:200px;
+	height: 200px;
+	border-radius: 50%;
+	border:1px solid #616161;
+}
+/*------------------About Me Section----------------*/
+.card{
+	margin: 0px
+}
+.section-div{
+	margin-top: 10%;
+	position: relative;
+	height: inherit;
+	width: 400px;
+	border: 1px solid red;
+	transition: opacity 1s ease;
+}
+.about-me-section{
+	position: relative;
+    width: inherit;
+    height: inherit;
+    transition: transform 0.9s;
+    border: 15px solid rgba(128,128,128,.5);
+    background-clip: padding-box;
+ }
+
+ .is-moved{
+ 	transform: translateX(-150%);
+ }
+
+
+/*--------------------------------------------------*/
+
+
+/*------------------My Portfolio Section----------------*/
+/*--------------------------------------------------*/
+
+
+/*------------------Contact Me Section----------------*/
+/*--------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------*/
+/*-----------------Footer-------------------------*/
+
+
+footer.page-footer{
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	padding: 0px;
+	height: 20px;
+	background-color: #039be5 !important;
+	margin-top: 10px;
+}
+.small-footer{
+	font-size: 12px;
+	font-weight: bolder;
+	padding: 0px;
+	color: #424242;
+}
+
+/*------------------------------------------------*/

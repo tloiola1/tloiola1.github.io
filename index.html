@@ -4,193 +4,70 @@
 	<title>Tarciso Portfolio</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
+<!-- Materialize 0.100.2 CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 <link href="https://fonts.googleapis.com/css?family=Arial|Bitter:700" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
 
 </head>
-<body  style="background-image: url(assets/images/pattern.png)">
+<body>
 
-<div class="wrapper">
-	<header class="navbar navbar-inverse">
-		<nav class="container">
-			<div class="tarciso text-center navbar-header">
-				<span class="navbar-brand">
-					Tarciso Loiola
-				</span>
+	<header class="navbar-fixed">
+		<nav class="grey lighten-5 opacity"></nav>
+		<div class="container">
+			<div class="logo"><a href="#" class="left">TDES<small class="small-logo">IGN.COM</small></a>
+				<div class="right menu-bar">
+					<div class="about-me hoverable"><a href="#">About Me</a></div>
+					<div class="my-portfolio hoverable"><a href="#">My Portfolio</a></div>
+					<div class="contact-me hoverable"><a href="#">Contact Me</a></div>
+				</div>
 			</div>
-				<div class="">
-					<ul class="text-center nav navbar-nav navbar-right">	
-						<li class="col-sm-4 col-xs-4">
-							<a id="btnAbout" class="hr"> About </a>
-						</li>
-						<li class="col-sm-4 col-xs-4">
-							<a id="btnPortfolio" class="hr"> Portfolio </a>
-						</li>
-						<li class="col-sm-4 col-xs-4">
-							<a id="btnContact" class="hr"> Contact </a>
-						</li>
-					</ul>
-				</div>
-		</nav>
-	</header>
-	<div class="container">
-		<div class="row">
-			<section id="about" class="container col-lg-8 col-md-8 col-sm-8 col-xs-12">
-				<div class="panel">
-					<div class="row">
-						<div class="panel-body">
-							<h2 class="page-header col-lg-12 col-md-12 col-sm-12 col-sm-12 col-xs-12">
-								About Me
-							</h2>
-					<div class="row">	
-						<div class="col-lg-6 col-md-6 col-sm-12 col-sm-12 col-xs-12">
-
-							<img id="tarciso" src="assets/images/TarcisoT.JPG" alt="Tarciso Loiola" class="img-rounded img-responsive">
-
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-12 col-sm-12 col-xs-12">	
-							<p>
-								Constantly searching for ways to make things work the
-								way they are supposed to. Always focusing on my
-								tasks. Collecting all the details about what I want to get
-								done and how I can achieve the best results. <br>Moreover,
-								always looking to improve myself and plan ahead for new projects. A good
-								programmer is a good researcher. And programming is not a necessity for me, it is a passion.
-							</p>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section id="portfolio" class="container col-lg-8 col-md-8 col-sm-8 col-xs-12">
-				<div class="panel">
-					<div class="row">
-						<div class="panel-body">
-							<h2 class="page-header col-lg-12 col-md-12 col-sm-12 col-sm-12 col-xs-12">
-								Portfolio
-							</h2>
-
-							<div class="text-center col-lg-6 col-md-6 col-sm-6 col-xs-12">	
-								<div>
-									<a id="relative" href="#"><img class="portfolioImage img img-rounded bounce" src="assets/images/mathcat.png" alt="mathcat"></a>
-								</div>
-
-								<div id="absolute" class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
-										<h3>MathCat</h3>
-								</div>
-							</div>
-
-							<div class="text-center col-lg-6 col-md-6 col-sm-6 col-xs-12">	
-								<div id="relative">
-									<a href=" https://tloiola1.github.io/week-4-game/" target="_blank"><img class="portfolioImage img img-rounded bounce" src="assets/images/crystalsCollector.png" alt="crystalsCollector"></a>
-								</div>
-								<div id="absolute" class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
-									<div class="">
-										<h3>Crystals Collector</h3>
-									</div>
-								</div>
-							</div>
-
-							<div class="text-center col-lg-6 col-md-6 col-sm-6 col-xs-12">	
-								<div>
-									<a href="https://tloiola1.github.io/week-4-game-2/" target="_blank" id="relative"><img class="portfolioImage img img-rounded bounce" src="assets/images/starWarsRPG.png" alt="starWarsRPG"></a>
-								</div>
-
-								<div id="absolute" class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
-										<h3>Star Wars RPG</h3>
-								</div>
-							</div>
-
-							<div class="text-center col-lg-6 col-md-6 col-sm-6 col-xs-12">	
-								<div id="relative">
-									<a href="https://tloiola1.github.io/TriviaGame-Advanced/" target="_blank"><img class="portfolioImage img img-rounded bounce" src="assets/images/triviaGame.png" alt="triviaGame"></a>
-								</div>
-								<div id="absolute" class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
-									<div class="">
-										<h3>Trivia Game</h3>
-									</div>
-								</div>
-							</div>
-
-							<div id="hangMan" class="text-center col-lg-6 col-md-6 col-sm-6 col-xs-12">	
-								<div id="relative">
-									<a href=" https://tloiola1.github.io/Hangman-Game/" target="_blank"><img class="portfolioImage img img-rounded bounce" src="assets/images/hangMan.png" alt="hangMan"></a>
-								</div>
-								<div id="absolute" class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
-									<div class="">
-										<h3>The Hang Man</h3>
-									</div>
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</section>
-			<section id="contact" class="container col-lg-8 col-md-8 col-sm-8 col-xs-12">
-				<div class="panel">
-					<div class="row">
-						<div class="panel-body">
-							<h2 class="page-header col-lg-12 col-md-12 col-sm-12 col-sm-12 col-xs-12">
-								Contact Me
-							</h2>
-							<form action="emaito:tarcisoloiola@hotmail.com">First name: 
-		  							<input class="form-control" type="text" name="firstname" >
-		  							<br>
-		 							Last name: <br>
-		  							<input class="form-control" type="text" name="lastname">
-		  							<br>
-									Message: <br>
-									<textarea class="form-control" name="message" style="height: 150px;"></textarea>
-									<br>
-		  							<input class="submit" type="submit" value="Submit">
-		  							<br>
-							</form>
-						</div>
-					</div>
-				</div>
-			</section>
-			<aside class="container col-lg-4 col-md-4 col-sm-4 col-xs-12">
-					<div class="panel panel-default">
-							<h3 class="page-header text-center col-lg-12 col-md-12 col-sm-12 col-xs-12">
-								<span class="header3">
-										Connect With Me
-								</span>
-							</h3>
-							<div class="row panel-body">
-								<div class="col-ls-4 col-md-4 col-sm-4 col-xs-4">
-										<a href="https://github.com/tloiola1" target="_blank">
-											<img src="assets/images/gitHub.png" alt="gitHub" class="img img-rounded img-responsive animated bounce infinite">
-										</a>
-								</div>
-								<div class="col-ls-4 col-md-4 col-sm-4 col-xs-4">
-										<a href="https://www.linkedin.com/in/tarciso-loiola-264a1437/" target="_blank">
-											<img src="assets/images/linkedin.png" alt="LinkedIn" class="img img-rounded img-responsive animated bounce infinite">
-										</a>
-								</div>
-								<div class="col-ls-4 col-md-4 col-sm-4 col-xs-4">
-										<a href="https://www.freecodecamp.com/tloiola1" target="_blank">
-											<img src="assets/images/freecodecamp.png" alt="freecodecamp" class="img img-rounded img-responsive animated bounce infinite" >
-										</a>
-								</div>
-							</div>
-					</div>
-			</aside>
 		</div>
-	</div><!-- //container close tag -->
-	<div class="push"></div>
-</div> <!-- wrapper closing tag -->
-<foote class="row footer">
-	<div class="navbar navbar-inverse text-center">
-		© Copyright2017 Tarciso Loiola
-	</div>
-</footer>
-<script src="assets/javascript/script.js"></script>
+  	</header>
+	<main>	    
+		<div class="container -main">	
+			<div class="row">	
+				<div class="center-image">
+					<img src="assets/images/tarciso.jpg" alt="Tarciso" class="my-image image-responsive hoverable">
+				</div>
+			</div>
+			<div class="section-div">
+				<section class="about-me-section card is-moved">
+					<div class="">
+					<p class="flow-text">Hi there!! I am very passionate about programming. This jouney started in 2009 when after a lot of relocation within my home country Brasil, I decided it was time for a change. Since I was familiar with Excel programming, I started, in 2010, an Associate Degree in Computer Science finishing it in 2012. In 2013, I arrived in Georgia where I felt just like home. Now coursing a coding boot camp within GA Tech, I can only think about how great my acomplishments will be.
+					</p>
+					</div>
+				</section>
+				<section class="about-me-section card is-moved">
+					<div class="">
+					<p class="flow-text">Hi there!! I am very passionate about programming. This jouney started in 2009 when after a lot of relocation within my home country Brasil, I decided it was time for a change. Since I was familiar with Excel programming, I started, in 2010, an Associate Degree in Computer Science finishing it in 2012. In 2013, I arrived in Georgia where I felt just like home. Now coursing a coding boot camp within GA Tech, I can only think about how great my acomplishments will be.
+					</p>
+					</div>
+				</section>
+
+			</div>
+		</div>
+	</main>
+
+	<footer class="page-footer">
+		<div class="container">
+			<div class="row">
+				<div class="right">
+					<small class="small-footer">©copyright TDESing.com</small>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+		
+	<!-- Materialize CSS JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<script src="assets/javascript/script.js"></script>
+	<script src="assets/javascript/mydatabase.js"></script>
 
 </body>
 </html>
