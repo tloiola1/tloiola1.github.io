@@ -22,8 +22,8 @@ $("#btnContact").on("click", function(){
 
 
 $(window).resize(function() {
+	var size = window.innerWidth;
 	
-	console.log(window.innerWidth);
 });
 
 
@@ -49,7 +49,7 @@ var items = document.querySelectorAll('.section-div .card');
     function getToggleItemMove( i ) {
       var item = items[i];
       return function() {
-        item.classList.toggle('is-moved');
+        item.classList.toggle('is-moved-about');
       }
     }
 });

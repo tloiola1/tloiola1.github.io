@@ -17,7 +17,7 @@ html, body{
 /*---------------Header-------------------------*/
 /*Seting the navbar opacity*/
 .opacity{
-	opacity: .1;
+	opacity: .9;
 }
 /*my Logo */
 .logo{
@@ -36,7 +36,6 @@ html, body{
 }
 /*Menu options top right corner*/
 .menu-bar{
-	position: fixed;
 	float: right;
 	font-size: 25px;
 	letter-spacing: normal;
@@ -45,7 +44,6 @@ html, body{
 }
 
 .about-me, .my-portfolio, .contact-me{
-	float: right;
 	margin-right: 5px;
 	margin-left: 5px;
 	padding: 10px;
@@ -64,39 +62,28 @@ a:hover{
 main{
 	flex: 1 0 auto;
 }
-.center-image{
-	margin-top: 10%;
-	margin-left: 500px;
-}
 .my-image{
-	position: fixed;
 	width:200px;
 	height: 200px;
 	border-radius: 50%;
 	border:1px solid #616161;
+	margin-top: 100px;
 }
 /*------------------About Me Section----------------*/
 .card{
 	margin: 0px
 }
 .section-div{
-	margin-top: 10%;
-	position: relative;
-	height: inherit;
-	width: 400px;
-	border: 1px solid red;
-	transition: opacity 1s ease;
+	/*transition: opacity 1s ease;*/
 }
 .about-me-section{
-	position: relative;
-    width: inherit;
-    height: inherit;
-    transition: transform 0.9s;
-    border: 15px solid rgba(128,128,128,.5);
-    background-clip: padding-box;
+	/*position: relative;*/
+    /*transition: transform 0.9s;*/
+    /*border: 15px solid rgba(128,128,128,.4);*/
+    /*background-clip: padding-box;*/
  }
 
- .is-moved{
+ .is-moved-about{
  	transform: translateX(-150%);
  }
 
@@ -111,7 +98,11 @@ main{
 /*------------------Contact Me Section----------------*/
 /*--------------------------------------------------*/
 
-
+.in,.fcc,.git{
+	width: 50px;
+	height: 50px;
+	border-radius: 10px;
+}
 
 
 
