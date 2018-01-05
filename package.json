@@ -1,0 +1,33 @@
+{
+  "name": "my_web_site",
+  "version": "1.0.0",
+  "description": "You can use the [editor on GitHub](https://github.com/tloiola1/tloiola1.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tloiola1/my_web_site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tloiola1/my_web_site/issues"
+  },
+  "homepage": "https://github.com/tloiola1/my_web_site#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "materialize": "^1.0.0",
+    "method-override": "^2.3.10",
+    "mysql": "^2.15.0",
+    "mysql2": "^1.5.1",
+    "path": "^0.12.7",
+    "sequelize": "^4.27.0",
+    "validator": "^9.2.0"
+  }
+}
