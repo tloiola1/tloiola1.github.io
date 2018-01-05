@@ -80,6 +80,12 @@ a:hover{
 	border:1px solid #616161;
 	margin-top: 100px;
 }
+/*------------------Home ----------------------------*/
+#home{
+	margin-top: 200px;
+}
+
+/*--------------------------------------------------*/
 /*------------------About Me Section----------------*/
 #about{
 	color: white;
@@ -97,15 +103,6 @@ p{
 #portfolio{
 	margin-top: 200px;
 }
-.card{
-	width: 100%;
-    float: left;
-    transition: transform 0.9s;
-    z-index: 1;
-    border: 15px solid rgba(128,128,128,.7);
-    background-clip: padding-box;
-}
-
 .portfolio-img{
 	height: 280px;
 	padding:0;
@@ -121,6 +118,7 @@ p{
 	margin-top: 200px;
 	color: white;
 	font-size: 20px;
+	margin-bottom: 30px;
 }
 .igf{
 	height: 100px;

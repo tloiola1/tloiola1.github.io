@@ -8,13 +8,12 @@ $(document).on("submit", ()=>{
         email,
         message
     };
-    console.log(contact);
     $.ajax({
         url: "/apicontact",
         method: "POST",
         data: contact
     }).then((answer)=>{
-        console.log("Thanks");
+        window.location = '/';
     });
 });
 

@@ -5,7 +5,6 @@ const validator = require("validator");
 module.exports = (app)=> {
 
    app.post("/apicontact", function (req, res){
-     console.log(req);
    	const name = req.body.name;
     const email = req.body.email;
     const message = req.body.message;
@@ -25,7 +24,6 @@ module.exports = (app)=> {
         return res.status(404).end();
       }
       else {
-        res.redirect("/thanks");
         res.status(200).end();
       }
     });
